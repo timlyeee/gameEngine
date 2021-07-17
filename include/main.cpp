@@ -1,9 +1,7 @@
-﻿#include <GLFW/glfw3.h>
+﻿#include <glfw3.h>
 
 int main(void)
 {
-	GLFWwindow* window;
-
 	/* Initialize the library */
 	if (!glfwInit())
 		return -1;

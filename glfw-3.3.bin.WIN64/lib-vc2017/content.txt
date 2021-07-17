@@ -1,0 +1,1585 @@
+Microsoft (R) COFF/PE Dumper Version 14.16.27045.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file glfw3dll.lib
+
+File Type: LIBRARY
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               3 number of sections
+        FFFFFFFF time date stamp
+             107 file pointer to symbol table
+               8 number of symbols
+               0 size of optional header
+               0 characteristics
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+      8C file pointer to raw data (0000008C to 000000CA)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+SECTION HEADER #2
+.idata$2 name
+       0 physical address
+       0 virtual address
+      14 size of raw data
+      CB file pointer to raw data (000000CB to 000000DE)
+      DF file pointer to relocation table
+       0 file pointer to line numbers
+       3 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+SECTION HEADER #3
+.idata$6 name
+       0 physical address
+       0 virtual address
+       A size of raw data
+      FD file pointer to raw data (000000FD to 00000106)
+      DF file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0200040 flags
+         Initialized Data
+         2 byte align
+         Read Write
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               2 number of sections
+        FFFFFFFF time date stamp
+              B7 file pointer to symbol table
+               2 number of symbols
+               0 size of optional header
+               0 characteristics
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+      64 file pointer to raw data (00000064 to 000000A2)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+SECTION HEADER #2
+.idata$3 name
+       0 physical address
+       0 virtual address
+      14 size of raw data
+      A3 file pointer to raw data (000000A3 to 000000B6)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               3 number of sections
+        FFFFFFFF time date stamp
+              DB file pointer to symbol table
+               2 number of symbols
+               0 size of optional header
+               0 characteristics
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+      8C file pointer to raw data (0000008C to 000000CA)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+SECTION HEADER #2
+.idata$5 name
+       0 physical address
+       0 virtual address
+       8 size of raw data
+      CB file pointer to raw data (000000CB to 000000D2)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0400040 flags
+         Initialized Data
+         8 byte align
+         Read Write
+
+SECTION HEADER #3
+.idata$4 name
+       0 physical address
+       0 virtual address
+       8 size of raw data
+      D3 file pointer to raw data (000000D3 to 000000DA)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0400040 flags
+         Initialized Data
+         8 byte align
+         Read Write
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwCreateCursor
+  Type         : code
+  Name type    : name
+  Hint         : 0
+  Name         : glfwCreateCursor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwCreateStandardCursor
+  Type         : code
+  Name type    : name
+  Hint         : 1
+  Name         : glfwCreateStandardCursor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwCreateWindow
+  Type         : code
+  Name type    : name
+  Hint         : 2
+  Name         : glfwCreateWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000022
+  DLL name     : glfw3.dll
+  Symbol name  : glfwCreateWindowSurface
+  Type         : code
+  Name type    : name
+  Hint         : 3
+  Name         : glfwCreateWindowSurface
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwDefaultWindowHints
+  Type         : code
+  Name type    : name
+  Hint         : 4
+  Name         : glfwDefaultWindowHints
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwDestroyCursor
+  Type         : code
+  Name type    : name
+  Hint         : 5
+  Name         : glfwDestroyCursor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwDestroyWindow
+  Type         : code
+  Name type    : name
+  Hint         : 6
+  Name         : glfwDestroyWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwExtensionSupported
+  Type         : code
+  Name type    : name
+  Hint         : 7
+  Name         : glfwExtensionSupported
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001A
+  DLL name     : glfw3.dll
+  Symbol name  : glfwFocusWindow
+  Type         : code
+  Name type    : name
+  Hint         : 8
+  Name         : glfwFocusWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetClipboardString
+  Type         : code
+  Name type    : name
+  Hint         : 9
+  Name         : glfwGetClipboardString
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetCurrentContext
+  Type         : code
+  Name type    : name
+  Hint         : 10
+  Name         : glfwGetCurrentContext
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetCursorPos
+  Type         : code
+  Name type    : name
+  Hint         : 11
+  Name         : glfwGetCursorPos
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetEGLContext
+  Type         : code
+  Name type    : name
+  Hint         : 12
+  Name         : glfwGetEGLContext
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetEGLDisplay
+  Type         : code
+  Name type    : name
+  Hint         : 13
+  Name         : glfwGetEGLDisplay
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetEGLSurface
+  Type         : code
+  Name type    : name
+  Hint         : 14
+  Name         : glfwGetEGLSurface
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000017
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetError
+  Type         : code
+  Name type    : name
+  Hint         : 15
+  Name         : glfwGetError
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetFramebufferSize
+  Type         : code
+  Name type    : name
+  Hint         : 16
+  Name         : glfwGetFramebufferSize
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetGamepadName
+  Type         : code
+  Name type    : name
+  Hint         : 17
+  Name         : glfwGetGamepadName
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetGamepadState
+  Type         : code
+  Name type    : name
+  Hint         : 18
+  Name         : glfwGetGamepadState
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetGammaRamp
+  Type         : code
+  Name type    : name
+  Hint         : 19
+  Name         : glfwGetGammaRamp
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetInputMode
+  Type         : code
+  Name type    : name
+  Hint         : 20
+  Name         : glfwGetInputMode
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetInstanceProcAddress
+  Type         : code
+  Name type    : name
+  Hint         : 21
+  Name         : glfwGetInstanceProcAddress
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetJoystickAxes
+  Type         : code
+  Name type    : name
+  Hint         : 22
+  Name         : glfwGetJoystickAxes
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetJoystickButtons
+  Type         : code
+  Name type    : name
+  Hint         : 23
+  Name         : glfwGetJoystickButtons
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetJoystickGUID
+  Type         : code
+  Name type    : name
+  Hint         : 24
+  Name         : glfwGetJoystickGUID
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetJoystickHats
+  Type         : code
+  Name type    : name
+  Hint         : 25
+  Name         : glfwGetJoystickHats
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetJoystickName
+  Type         : code
+  Name type    : name
+  Hint         : 26
+  Name         : glfwGetJoystickName
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetJoystickUserPointer
+  Type         : code
+  Name type    : name
+  Hint         : 27
+  Name         : glfwGetJoystickUserPointer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000015
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetKey
+  Type         : code
+  Name type    : name
+  Hint         : 28
+  Name         : glfwGetKey
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetKeyName
+  Type         : code
+  Name type    : name
+  Hint         : 29
+  Name         : glfwGetKeyName
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetKeyScancode
+  Type         : code
+  Name type    : name
+  Hint         : 30
+  Name         : glfwGetKeyScancode
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitorContentScale
+  Type         : code
+  Name type    : name
+  Hint         : 31
+  Name         : glfwGetMonitorContentScale
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitorName
+  Type         : code
+  Name type    : name
+  Hint         : 32
+  Name         : glfwGetMonitorName
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitorPhysicalSize
+  Type         : code
+  Name type    : name
+  Hint         : 33
+  Name         : glfwGetMonitorPhysicalSize
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitorPos
+  Type         : code
+  Name type    : name
+  Hint         : 34
+  Name         : glfwGetMonitorPos
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000024
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitorUserPointer
+  Type         : code
+  Name type    : name
+  Hint         : 35
+  Name         : glfwGetMonitorUserPointer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitorWorkarea
+  Type         : code
+  Name type    : name
+  Hint         : 36
+  Name         : glfwGetMonitorWorkarea
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001A
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMonitors
+  Type         : code
+  Name type    : name
+  Hint         : 37
+  Name         : glfwGetMonitors
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetMouseButton
+  Type         : code
+  Name type    : name
+  Hint         : 38
+  Name         : glfwGetMouseButton
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetOSMesaColorBuffer
+  Type         : code
+  Name type    : name
+  Hint         : 39
+  Name         : glfwGetOSMesaColorBuffer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetOSMesaContext
+  Type         : code
+  Name type    : name
+  Hint         : 40
+  Name         : glfwGetOSMesaContext
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetOSMesaDepthBuffer
+  Type         : code
+  Name type    : name
+  Hint         : 41
+  Name         : glfwGetOSMesaDepthBuffer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000033
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetPhysicalDevicePresentationSupport
+  Type         : code
+  Name type    : name
+  Hint         : 42
+  Name         : glfwGetPhysicalDevicePresentationSupport
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetPrimaryMonitor
+  Type         : code
+  Name type    : name
+  Hint         : 43
+  Name         : glfwGetPrimaryMonitor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetProcAddress
+  Type         : code
+  Name type    : name
+  Hint         : 44
+  Name         : glfwGetProcAddress
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000002C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetRequiredInstanceExtensions
+  Type         : code
+  Name type    : name
+  Hint         : 45
+  Name         : glfwGetRequiredInstanceExtensions
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000016
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetTime
+  Type         : code
+  Name type    : name
+  Hint         : 46
+  Name         : glfwGetTime
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetTimerFrequency
+  Type         : code
+  Name type    : name
+  Hint         : 47
+  Name         : glfwGetTimerFrequency
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetTimerValue
+  Type         : code
+  Name type    : name
+  Hint         : 48
+  Name         : glfwGetTimerValue
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetVersion
+  Type         : code
+  Name type    : name
+  Hint         : 49
+  Name         : glfwGetVersion
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetVersionString
+  Type         : code
+  Name type    : name
+  Hint         : 50
+  Name         : glfwGetVersionString
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetVideoMode
+  Type         : code
+  Name type    : name
+  Hint         : 51
+  Name         : glfwGetVideoMode
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetVideoModes
+  Type         : code
+  Name type    : name
+  Hint         : 52
+  Name         : glfwGetVideoModes
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWGLContext
+  Type         : code
+  Name type    : name
+  Hint         : 53
+  Name         : glfwGetWGLContext
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWin32Adapter
+  Type         : code
+  Name type    : name
+  Hint         : 54
+  Name         : glfwGetWin32Adapter
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWin32Monitor
+  Type         : code
+  Name type    : name
+  Hint         : 55
+  Name         : glfwGetWin32Monitor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWin32Window
+  Type         : code
+  Name type    : name
+  Hint         : 56
+  Name         : glfwGetWin32Window
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowAttrib
+  Type         : code
+  Name type    : name
+  Hint         : 57
+  Name         : glfwGetWindowAttrib
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000024
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowContentScale
+  Type         : code
+  Name type    : name
+  Hint         : 58
+  Name         : glfwGetWindowContentScale
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowFrameSize
+  Type         : code
+  Name type    : name
+  Hint         : 59
+  Name         : glfwGetWindowFrameSize
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowMonitor
+  Type         : code
+  Name type    : name
+  Hint         : 60
+  Name         : glfwGetWindowMonitor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowOpacity
+  Type         : code
+  Name type    : name
+  Hint         : 61
+  Name         : glfwGetWindowOpacity
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowPos
+  Type         : code
+  Name type    : name
+  Hint         : 62
+  Name         : glfwGetWindowPos
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowSize
+  Type         : code
+  Name type    : name
+  Hint         : 63
+  Name         : glfwGetWindowSize
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwGetWindowUserPointer
+  Type         : code
+  Name type    : name
+  Hint         : 64
+  Name         : glfwGetWindowUserPointer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwHideWindow
+  Type         : code
+  Name type    : name
+  Hint         : 65
+  Name         : glfwHideWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwIconifyWindow
+  Type         : code
+  Name type    : name
+  Hint         : 66
+  Name         : glfwIconifyWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000013
+  DLL name     : glfw3.dll
+  Symbol name  : glfwInit
+  Type         : code
+  Name type    : name
+  Hint         : 67
+  Name         : glfwInit
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000017
+  DLL name     : glfw3.dll
+  Symbol name  : glfwInitHint
+  Type         : code
+  Name type    : name
+  Hint         : 68
+  Name         : glfwInitHint
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwJoystickIsGamepad
+  Type         : code
+  Name type    : name
+  Hint         : 69
+  Name         : glfwJoystickIsGamepad
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwJoystickPresent
+  Type         : code
+  Name type    : name
+  Hint         : 70
+  Name         : glfwJoystickPresent
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwMakeContextCurrent
+  Type         : code
+  Name type    : name
+  Hint         : 71
+  Name         : glfwMakeContextCurrent
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwMaximizeWindow
+  Type         : code
+  Name type    : name
+  Hint         : 72
+  Name         : glfwMaximizeWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwPollEvents
+  Type         : code
+  Name type    : name
+  Hint         : 73
+  Name         : glfwPollEvents
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwPostEmptyEvent
+  Type         : code
+  Name type    : name
+  Hint         : 74
+  Name         : glfwPostEmptyEvent
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000026
+  DLL name     : glfw3.dll
+  Symbol name  : glfwRawMouseMotionSupported
+  Type         : code
+  Name type    : name
+  Hint         : 75
+  Name         : glfwRawMouseMotionSupported
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwRequestWindowAttention
+  Type         : code
+  Name type    : name
+  Hint         : 76
+  Name         : glfwRequestWindowAttention
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwRestoreWindow
+  Type         : code
+  Name type    : name
+  Hint         : 77
+  Name         : glfwRestoreWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetCharCallback
+  Type         : code
+  Name type    : name
+  Hint         : 78
+  Name         : glfwSetCharCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000022
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetCharModsCallback
+  Type         : code
+  Name type    : name
+  Hint         : 79
+  Name         : glfwSetCharModsCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetClipboardString
+  Type         : code
+  Name type    : name
+  Hint         : 80
+  Name         : glfwSetClipboardString
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000018
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetCursor
+  Type         : code
+  Name type    : name
+  Hint         : 81
+  Name         : glfwSetCursor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetCursorEnterCallback
+  Type         : code
+  Name type    : name
+  Hint         : 82
+  Name         : glfwSetCursorEnterCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetCursorPos
+  Type         : code
+  Name type    : name
+  Hint         : 83
+  Name         : glfwSetCursorPos
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetCursorPosCallback
+  Type         : code
+  Name type    : name
+  Hint         : 84
+  Name         : glfwSetCursorPosCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetDropCallback
+  Type         : code
+  Name type    : name
+  Hint         : 85
+  Name         : glfwSetDropCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetErrorCallback
+  Type         : code
+  Name type    : name
+  Hint         : 86
+  Name         : glfwSetErrorCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000029
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetFramebufferSizeCallback
+  Type         : code
+  Name type    : name
+  Hint         : 87
+  Name         : glfwSetFramebufferSizeCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000017
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetGamma
+  Type         : code
+  Name type    : name
+  Hint         : 88
+  Name         : glfwSetGamma
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetGammaRamp
+  Type         : code
+  Name type    : name
+  Hint         : 89
+  Name         : glfwSetGammaRamp
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetInputMode
+  Type         : code
+  Name type    : name
+  Hint         : 90
+  Name         : glfwSetInputMode
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000022
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetJoystickCallback
+  Type         : code
+  Name type    : name
+  Hint         : 91
+  Name         : glfwSetJoystickCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetJoystickUserPointer
+  Type         : code
+  Name type    : name
+  Hint         : 92
+  Name         : glfwSetJoystickUserPointer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetKeyCallback
+  Type         : code
+  Name type    : name
+  Hint         : 93
+  Name         : glfwSetKeyCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000021
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetMonitorCallback
+  Type         : code
+  Name type    : name
+  Hint         : 94
+  Name         : glfwSetMonitorCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000024
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetMonitorUserPointer
+  Type         : code
+  Name type    : name
+  Hint         : 95
+  Name         : glfwSetMonitorUserPointer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetMouseButtonCallback
+  Type         : code
+  Name type    : name
+  Hint         : 96
+  Name         : glfwSetMouseButtonCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetScrollCallback
+  Type         : code
+  Name type    : name
+  Hint         : 97
+  Name         : glfwSetScrollCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000016
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetTime
+  Type         : code
+  Name type    : name
+  Hint         : 98
+  Name         : glfwSetTime
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowAspectRatio
+  Type         : code
+  Name type    : name
+  Hint         : 99
+  Name         : glfwSetWindowAspectRatio
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowAttrib
+  Type         : code
+  Name type    : name
+  Hint         : 100
+  Name         : glfwSetWindowAttrib
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowCloseCallback
+  Type         : code
+  Name type    : name
+  Hint         : 101
+  Name         : glfwSetWindowCloseCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000002C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowContentScaleCallback
+  Type         : code
+  Name type    : name
+  Hint         : 102
+  Name         : glfwSetWindowContentScaleCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000025
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowFocusCallback
+  Type         : code
+  Name type    : name
+  Hint         : 103
+  Name         : glfwSetWindowFocusCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowIcon
+  Type         : code
+  Name type    : name
+  Hint         : 104
+  Name         : glfwSetWindowIcon
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000027
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowIconifyCallback
+  Type         : code
+  Name type    : name
+  Hint         : 105
+  Name         : glfwSetWindowIconifyCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000028
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowMaximizeCallback
+  Type         : code
+  Name type    : name
+  Hint         : 106
+  Name         : glfwSetWindowMaximizeCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowMonitor
+  Type         : code
+  Name type    : name
+  Hint         : 107
+  Name         : glfwSetWindowMonitor
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowOpacity
+  Type         : code
+  Name type    : name
+  Hint         : 108
+  Name         : glfwSetWindowOpacity
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowPos
+  Type         : code
+  Name type    : name
+  Hint         : 109
+  Name         : glfwSetWindowPos
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowPosCallback
+  Type         : code
+  Name type    : name
+  Hint         : 110
+  Name         : glfwSetWindowPosCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000027
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowRefreshCallback
+  Type         : code
+  Name type    : name
+  Hint         : 111
+  Name         : glfwSetWindowRefreshCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowShouldClose
+  Type         : code
+  Name type    : name
+  Hint         : 112
+  Name         : glfwSetWindowShouldClose
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001C
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowSize
+  Type         : code
+  Name type    : name
+  Hint         : 113
+  Name         : glfwSetWindowSize
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000024
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowSizeCallback
+  Type         : code
+  Name type    : name
+  Hint         : 114
+  Name         : glfwSetWindowSizeCallback
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000022
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowSizeLimits
+  Type         : code
+  Name type    : name
+  Hint         : 115
+  Name         : glfwSetWindowSizeLimits
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001D
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowTitle
+  Type         : code
+  Name type    : name
+  Hint         : 116
+  Name         : glfwSetWindowTitle
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000023
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSetWindowUserPointer
+  Type         : code
+  Name type    : name
+  Hint         : 117
+  Name         : glfwSetWindowUserPointer
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwShowWindow
+  Type         : code
+  Name type    : name
+  Hint         : 118
+  Name         : glfwShowWindow
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001A
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSwapBuffers
+  Type         : code
+  Name type    : name
+  Hint         : 119
+  Name         : glfwSwapBuffers
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001B
+  DLL name     : glfw3.dll
+  Symbol name  : glfwSwapInterval
+  Type         : code
+  Name type    : name
+  Hint         : 120
+  Name         : glfwSwapInterval
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000018
+  DLL name     : glfw3.dll
+  Symbol name  : glfwTerminate
+  Type         : code
+  Name type    : name
+  Hint         : 121
+  Name         : glfwTerminate
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000024
+  DLL name     : glfw3.dll
+  Symbol name  : glfwUpdateGamepadMappings
+  Type         : code
+  Name type    : name
+  Hint         : 122
+  Name         : glfwUpdateGamepadMappings
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001E
+  DLL name     : glfw3.dll
+  Symbol name  : glfwVulkanSupported
+  Type         : code
+  Name type    : name
+  Hint         : 123
+  Name         : glfwVulkanSupported
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwWaitEvents
+  Type         : code
+  Name type    : name
+  Hint         : 124
+  Name         : glfwWaitEvents
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwWaitEventsTimeout
+  Type         : code
+  Name type    : name
+  Hint         : 125
+  Name         : glfwWaitEventsTimeout
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000019
+  DLL name     : glfw3.dll
+  Symbol name  : glfwWindowHint
+  Type         : code
+  Name type    : name
+  Hint         : 126
+  Name         : glfwWindowHint
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 0000001F
+  DLL name     : glfw3.dll
+  Symbol name  : glfwWindowHintString
+  Type         : code
+  Name type    : name
+  Hint         : 127
+  Name         : glfwWindowHintString
+
+  Version      : 0
+  Machine      : 8664 (x64)
+  TimeDateStamp: FFFFFFFF
+  SizeOfData   : 00000020
+  DLL name     : glfw3.dll
+  Symbol name  : glfwWindowShouldClose
+  Type         : code
+  Name type    : name
+  Hint         : 128
+  Name         : glfwWindowShouldClose
+
+  Summary
+
+          BD .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           A .idata$6
