@@ -1,8 +1,14 @@
 #ifndef MODEL_H
 #define MODEL_H
 #define STB_IMAGE_IMPLEMENTATION
-#include <gles3w.h> 
 
+#ifdef INTERNAL_GLEW
+#include <gles3w.h>
+#endif
+
+#ifdef EXTERNAL_GLEW
+#include <Gl/glew.h>
+#endif
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <stb_image.h>

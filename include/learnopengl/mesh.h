@@ -1,8 +1,13 @@
 #ifndef MESH_H
 #define MESH_H
 
-#include <gles3w.h> // holds all OpenGL type declarations
+#ifdef INTERNAL_GLEW
+#include <gles3w.h>
+#endif
 
+#ifdef EXTERNAL_GLEW
+#include <Gl/glew.h>
+#endif
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 

@@ -1,7 +1,13 @@
 #ifndef CAMERA_H
 #define CAMERA_H
+#ifdef INTERNAL_GLEW
 
 #include <gles3w.h>
+#endif
+
+#ifdef EXTERNAL_GLEW
+#include <Gl/glew.h>
+#endif
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 

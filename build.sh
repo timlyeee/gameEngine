@@ -1,2 +1,2 @@
-cmake -A"x64"\
+cmake -A"x86"\
     -B"out/x64"

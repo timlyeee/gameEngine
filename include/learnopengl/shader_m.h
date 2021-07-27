@@ -1,7 +1,11 @@
 #ifndef SHADER_H
 #define SHADER_H
-
+#ifdef INTERNAL_GLEW
 #include <gles3w.h>
+#endif
+#ifdef EXTERNAL_GLEW
+#include <Gl/glew.h>
+#endif
 #include <glm/glm.hpp>
 
 #include <string>
@@ -50,6 +54,8 @@ public:
         // 2. compile shaders
         unsigned int vertex, fragment;
         // vertex shader
+
+
         vertex = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertex, 1, &vShaderCode, NULL);
         glCompileShader(vertex);

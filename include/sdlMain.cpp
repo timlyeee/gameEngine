@@ -1,3 +1,4 @@
+
 #include <stb_image.h>
 #include <exception>
 #include <functional>
@@ -13,17 +14,25 @@
 #include <algorithm>
 #include <vector>
 #include <cassert>
-#include "GLES3Wrangler.h"
 #include "SDL_main.h"
 #include "SDL_syswm.h"
-#include "gles3w.h"
+#define INTERNAL_GLEW
+#ifdef INTERNAL_GLEW
+	#include <GLES3Wrangler.h>
+	#include <gles3w.h>
+#endif
+#ifdef EXTERNAL_GLEW
+	#include "GL/glew.h"
+	#include <SDL_egl.h>
+#endif
 #include <SDL.h>
+
 #include <learnopengl/shader_m.h>
 #include <learnopengl/camera.h>
 #include <learnopengl/model.h>
 
 #include <iostream>
-#define GL_GLEXT_PROTOTYPES 1
+
 #define GL_CHECK(x)                                                            \
   do {                                                                         \
     x;                                                                         \
@@ -74,6 +83,8 @@ float lastFrame = 0.0f;
 
 int main(int argc, char** argv)
 {
+    
+
     // glfw: initialize and configure
     // ------------------------------
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
@@ -86,10 +97,10 @@ int main(int argc, char** argv)
     //sdl create window
     auto wnd(SDL_CreateWindow("test", SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED, 640, 480,
-        flags));
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
-
+		flags));
+    //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+    
     HWND window;
     {
         SDL_SysWMinfo wmInfo;
@@ -97,14 +108,29 @@ int main(int argc, char** argv)
         SDL_GetWindowWMInfo(wnd, &wmInfo);
         window = wmInfo.info.win.window;
     }
-    //eglSetup
+    
+#ifdef INTERNAL_GLEW
+	if (!gles3wInit()) {
+		std::cout << "Init error";
+		return -1;
+	}
+#endif
+	//eglSetup
     eglSetup(window);
+	//glewExperimental = GL_TRUE;
+#ifdef EXTERNAL_GLEW
+	if (glewInit() != GLEW_OK) {
+		std::cout << "Init error";
+		return -1;
+	}
+#endif
+	glEnable(GL_DEPTH_TEST);
 
 
     
     // configure global opengl state
     // -----------------------------
-    glEnable(GL_DEPTH_TEST);
+    
 
     // build and compile shaders
     // -------------------------
@@ -162,8 +188,8 @@ int main(int argc, char** argv)
     
     // cube VAO
     GLuint cubeVAO;
-    GL_CHECK(glGenVertexArraysOES(1, &cubeVAO));
-    GL_CHECK(glBindVertexArrayOES(cubeVAO));
+    GL_CHECK(glGenVertexArrays(1, &cubeVAO));
+    GL_CHECK(glBindVertexArray(cubeVAO));
 
     // cube vbo
     GLuint cubeVBO;
@@ -190,8 +216,11 @@ int main(int argc, char** argv)
     glGenBuffers(1, &uboMatrices);
     glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
     glBufferData(GL_UNIFORM_BUFFER, 2 * sizeof(glm::mat4), NULL, GL_STATIC_DRAW);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+	glBindBuffer(GL_UNIFORM_BUFFER, 0);
     // define the range of the buffer that links to a uniform binding point
+	GLint buffer_offset;
+	glGetIntegerv(GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT, &buffer_offset);
     GL_CHECK(glBindBufferRange(GL_UNIFORM_BUFFER, 0, uboMatrices, 0, 2 * sizeof(glm::mat4)));
 
     // store the projection matrix (we only do this once now) (note: we're not using zoom anymore by changing the FoV)
@@ -211,8 +240,8 @@ int main(int argc, char** argv)
         }
 
         // Clear the screen to black
-        GL_CHECK(glClearColor(0.0f, 0.0f, 0.0f, 1.0f));
-        GL_CHECK(glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT));
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
 
         // set the view and projection matrix in the uniform block - we only have to do this once per loop iteration.
@@ -272,7 +301,8 @@ bool eglSetup(HWND windowHandle) {
     auto* window = reinterpret_cast<EGLNativeWindowType>(
         windowHandle); // NOLINT(performance-no-int-to-ptr)
 
-    assert(gles3wInit());
+	
+		
 
     //////////////////////////////////////////////////////////////////////////
 
@@ -330,7 +360,7 @@ bool eglSetup(HWND windowHandle) {
     std::vector<EGLConfig> vecEGLConfig{};
     EGLConfig cfgs[128];
 
-    eglGetConfigs(eglDisplay, cfgs, 128, &numConfig);
+    EGL_CHECK(eglGetConfigs(eglDisplay, cfgs, 128, &numConfig));
     if (eglChooseConfig(eglDisplay, defaultAttribs, nullptr, 0, &numConfig)) {
         vecEGLConfig.resize(numConfig);
     }
@@ -359,24 +389,24 @@ bool eglSetup(HWND windowHandle) {
 
     for (int i = 0; i < numConfig; i++) {
         int depthValue{ 0 };
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_RED_SIZE,
-            &params[0]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_GREEN_SIZE,
-            &params[1]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_BLUE_SIZE,
-            &params[2]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_ALPHA_SIZE,
-            &params[3]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_DEPTH_SIZE,
-            &params[4]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_STENCIL_SIZE,
-            &params[5]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_SAMPLE_BUFFERS,
-            &params[6]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_SAMPLES,
-            &params[7]);
-        eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_DEPTH_ENCODING_NV,
-            &depthValue);
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_RED_SIZE,
+            &params[0]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_GREEN_SIZE,
+            &params[1]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_BLUE_SIZE,
+            &params[2]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_ALPHA_SIZE,
+            &params[3]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_DEPTH_SIZE,
+            &params[4]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_STENCIL_SIZE,
+            &params[5]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_SAMPLE_BUFFERS,
+            &params[6]));
+        EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_SAMPLES,
+            &params[7]));
+        /*EGL_CHECK(eglGetConfigAttrib(eglDisplay, vecEGLConfig[i], EGL_DEPTH_ENCODING_NV,
+            &depthValue));*/
 
         int bNonLinearDepth =
             (depthValue == EGL_DEPTH_ENCODING_NONLINEAR_NV) ? 1 : 0;
@@ -468,7 +498,7 @@ bool eglSetup(HWND windowHandle) {
 
 
     EGL_CHECK(eglSurface = eglCreateWindowSurface(eglDisplay, eglConfig,
-        window, nullptr));
+        window, NULL));
     if (eglSurface == EGL_NO_SURFACE) {
         printf("Window surface created failed.");
         return false;
@@ -493,5 +523,7 @@ bool eglSetup(HWND windowHandle) {
     }
 
     EGL_CHECK(eglMakeCurrent(eglDisplay, eglSurface, eglSurface, eglContext));
+
+	
     return true;
 }
