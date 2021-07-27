@@ -1,2 +1,4 @@
-cmake -A"x86"\
-    -B"out/x64"
+platform=$1
+
+cmake -A"${platform}"\
+    -B"out/${platform}"
