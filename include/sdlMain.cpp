@@ -221,8 +221,9 @@ int main(int argc, char** argv)
     // define the range of the buffer that links to a uniform binding point
 	GLint buffer_offset;
 	glGetIntegerv(GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT, &buffer_offset);
-    GL_CHECK(glBindBufferRange(GL_UNIFORM_BUFFER, 0, uboMatrices, 0, 2 * sizeof(glm::mat4)));
-
+	std::cout << "GLenum:" << sizeof(GLenum) << "GLUINT:" << sizeof(GLuint) << " GLUINTPTR:" << sizeof(GLintptr) << " GLsizeiptr:" << sizeof(GLsizeiptr);
+    GL_CHECK(glBindBufferRange(GL_UNIFORM_BUFFER, 0, uboMatrices, static_cast< signed   long long int>( 0), static_cast< signed   long long int> (2 * sizeof(glm::mat4))));
+	std::cout << "GLenum:" << sizeof(GLenum) << "GLUINT:" << sizeof(GLuint) << " GLUINTPTR:" << sizeof(GLintptr) << " GLsizeiptr:" << sizeof(GLsizeiptr);
     // store the projection matrix (we only do this once now) (note: we're not using zoom anymore by changing the FoV)
     glm::mat4 projection = glm::perspective(45.0f, (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
     glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
