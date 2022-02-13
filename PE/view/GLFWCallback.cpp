@@ -1,4 +1,4 @@
-#include <glfw/glfw3.h>
+#include "GLFW/glfw3.h"
 #include <glm/glm.hpp>
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode) {

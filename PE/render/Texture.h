@@ -1,5 +1,5 @@
-#include<glad/glad.h>
-#include "utils/Macros.h"
+#include <gl/glew.h>
+
 class Texture {
 public:
 	Texture();

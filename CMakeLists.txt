@@ -1,84 +1,58 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(EngineNative "E:/EG/engine-native")
-set(PetitEngine "petitEngine")
+set(MENGINE "PetitEngine")
+
 set(CMAKE_CXX_STANDARD 17)
-project(${PetitEngine} CXX)
-if(${CMAKE_SIZEOF_VOID_P} STREQUAL "8")
-set(platform "x64")
-else()
-set(platform "x86")
+project(${MENGINE} CXX)
+option(PLATFORM_WINDOWS "is using Windows platform" OFF)
+option(PLATFORM_MAC "is using Mac platform" ON)
+
+
+
+if(PLATFORM_MAC)
+find_package(GLEW 2.2 REQUIRED)
+#set(GLFW_DIR "/opt/homebrew/Cellar/glfw/3.3.6/")
+
+
+set(CMAKE_CXX_FLAGS "-g -std=c++11 -Wformat")
+
+# Path to glew lib
+include_directories(/opt/homebrew/Cellar/glew/2.2.0_1/include)
+
+# Path to glfw lib
+include_directories(/opt/homebrew/Cellar/glfw/3.3.6/include)
+
+# Path to glm lib
+include_directories(/opt/homebrew/Cellar/glm/0.9.9.8/include)
+set(GLFW_LINK /opt/homebrew/Cellar/glfw/3.3.6/lib/libglfw.3.dylib)
+find_package(GLFW3)
+target_link_libraries(${MENGINE}
+    ${GLEW_LIBRARIES}
+    ${GLFW_LINK}
+    ${GLM_LIBRARIES}
+    ${OPENGL_LIBRARIES}
+)	
+#include(${CMAKE_CURRENT_LIST_DIR}/external/mac/CMakeLists.txt)
+elseif(PLATFORM_WINDOWS)
+	include(${CMAKE_CURRENT_LIST_DIR}/external/windows/CMakeLists.txt)
 endif()
 
+# end engine library
+
+# course 1
+set(APP_NAME "course001")
+
+add_executable(${APP_NAME}
+	${CMAKE_CURRENT_LIST_DIR}/courses/001/main.cpp
+)
+target_link_libraries(${APP_NAME} PUBLIC
+	${MENGINE}
+	${OPENGL_LIBRARIES}
+	${GLFW_LIBRARIES}
+)
 
 
-add_library(glew SHARED IMPORTED GLOBAL)
-set_target_properties(glew PROPERTIES
-	IMPORTED_LOCATION ${CMAKE_CURRENT_LIST_DIR}/glew/${platform}/glew32.dll
-	IMPORTED_IMPLIB ${CMAKE_CURRENT_LIST_DIR}/glew/${platform}/glew32.lib
-)
-add_library(glad STATIC IMPORTED GLOBAL)
-set_target_properties(glad PROPERTIES
-	IMPORTED_LOCATION_RELEASE ${CMAKE_CURRENT_LIST_DIR}/glad/x64-windows/lib/glad.lib
-	IMPORTED_LOCATION_DEBUG  ${CMAKE_CURRENT_LIST_DIR}/glad/x64-windows/debug/lib/glad.lib
-)
-add_library(glfw SHARED IMPORTED GLOBAL)
-set_target_properties(glfw PROPERTIES
-	IMPORTED_LOCATION ${CMAKE_CURRENT_LIST_DIR}/glfw-3.3.bin.WIN64/lib-vc2017/glfw3.dll
-	IMPORTED_IMPLIB  ${CMAKE_CURRENT_LIST_DIR}/glfw-3.3.bin.WIN64/lib-vc2017/glfw3.lib
-)
-
-set(SHADER_SOURCES
-	${CMAKE_CURRENT_LIST_DIR}/include/shaders/Shader.h
-	${CMAKE_CURRENT_LIST_DIR}/include/shaders/Shader.cpp
-)
-set(IMAGE_SOURCES
-	${CMAKE_CURRENT_LIST_DIR}/include/image/stb_image.h
-	${CMAKE_CURRENT_LIST_DIR}/include/image/Image.h
-)
-set(RENDER_SOURCES
-	${CMAKE_CURRENT_LIST_DIR}/include/render/Texture.h
-	${CMAKE_CURRENT_LIST_DIR}/include/render/Texture.cpp
-)
-
-set(MATH_SOURCES
-	${CMAKE_CURRENT_LIST_DIR}/include/math/Math.h
-	${CMAKE_CURRENT_LIST_DIR}/include/math/Math.cpp
-)
-
-set(UTILS_SOURCES
-	${CMAKE_CURRENT_LIST_DIR}/include/utils/Macros.h
-)
-
-add_library(PETIT_ENGINE STATIC
-	${SHADER_SOURCES}
-	${RENDER_SOURCES}
-	${MATH_SOURCES}
-	${IMAGE_SOURCES}
-)
-
-target_link_libraries(PETIT_ENGINE PUBLIC 
-	opengl32
-	glfw
-	glad
-)
-
-target_include_directories(PETIT_ENGINE PUBLIC
-	${CMAKE_CURRENT_LIST_DIR}/glm/x64-windows/include
-	${CMAKE_CURRENT_LIST_DIR}/glad/x64-windows/include
-	${CMAKE_CURRENT_LIST_DIR}/assimp
-	${CMAKE_CURRENT_LIST_DIR}/include
-	${CMAKE_CURRENT_LIST_DIR}/glew/include
-	${CMAKE_CURRENT_LIST_DIR}/glfw-3.3.bin.WIN64/include
-)
-
-add_executable(opengl-001
-	${CMAKE_CURRENT_LIST_DIR}/include/courses/001/main.cpp
-	${CMAKE_CURRENT_LIST_DIR}/include/courses/cbFunctions.cpp
-)
-target_link_libraries(opengl-001 PUBLIC
-	PETIT_ENGINE
-)
-target_include_directories(opengl-001 PUBLIC
+target_include_directories(${APP_NAME} PUBLIC
 	${CMAKE_CURRENT_LIST_DIR}/include
 )
+target_compile_definitions(${MENGINE} PUBLIC GL_SILENCE_DEPRECATION)

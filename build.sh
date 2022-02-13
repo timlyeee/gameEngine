@@ -1,4 +1,4 @@
-platform=$1
+arch=$1
 
 cmake -A"${platform}"\
     -B"out/${platform}"

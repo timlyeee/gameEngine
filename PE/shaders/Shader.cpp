@@ -1,3 +1,4 @@
+#include <gl/glew.h>
 #include "shader.h"
 
 Shader::Shader(const char* vertexPath, const char* fragmentPath){
