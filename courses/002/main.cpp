@@ -15,6 +15,10 @@
 #include <iostream>
 #include "shaders/Shader.h"
 
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
+
 
 
 //Vertices for painting 2 triangles which is a rectangle
@@ -75,6 +79,7 @@ int main() {
 	//Bind VBO vertices to buffer
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+//
 
 	//EBO
 	unsigned int EBO;
@@ -93,12 +98,16 @@ int main() {
 	//set texture properties
 	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
 	glEnableVertexAttribArray(2);
-	
 	//compile shader to vertex shader, would be an id
-	Shader ourShader("courses/001/shader.vs", "courses/001/shader.fs");
+	Shader ourShader("courses/002/shader.vs", "courses/002/shader.fs");	
+
+	// =====Texture Wrap method=====
+
 	ourShader.use();
 	glUniform1i(glGetUniformLocation(ourShader.ID, "texture1"), 0); // Manually set shader as this
 	ourShader.setInt("texture2", 1); // or set it via shader class
+
+
 
     while(!view->shouldClose()) {
         view->clear();
@@ -108,10 +117,29 @@ int main() {
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, texture2);
 
-		
+		// create transformations
+		glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+		//transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
+		transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+		transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
+
+		// get matrix's uniform location and set matrix
+		ourShader.use();
+		unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
+
 		ourShader.use();
 
 		glBindVertexArray(VAO);
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+		transform = glm::mat4(1.0f); // reset it to identity matrix
+		transform = glm::translate(transform, glm::vec3(-0.5f, 0.5f, 0.0f));
+		float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+		transform = glm::scale(transform, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &transform[0][0]); // this time take the matrix value array's first element as its memory pointer value
+
+		// now with the uniform matrix being replaced with new transformations, draw it again.
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		view->swap();
