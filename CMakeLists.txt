@@ -1,23 +1,27 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(MENGINE "PetitEngine")
+set(MENGINE "learnopengl_to_renderpipeline")
 
 set(CMAKE_CXX_STANDARD 17)
-set(platform x64)
+
 project(${MENGINE} CXX)
-option(PLATFORM_WINDOWS "is using Windows platform" OFF)
-option(PLATFORM_MAC "is using Mac platform" ON)
 
+# External module
+include(${CMAKE_CURRENT_LIST_DIR}/external/CMakeLists.txt)
 
-if(PLATFORM_MAC)
-    include(${CMAKE_CURRENT_LIST_DIR}/external/mac/CMakeLists.txt)
-	#target_compile_definitions(${APP_NAME} PUBLIC GL_SILENCE_DEPRECATION)
-elseif(PLATFORM_WINDOWS)
-	include(${CMAKE_CURRENT_LIST_DIR}/external/windows/CMakeLists.txt)
+set(MEXTERNAL engine_external)
+add_library(${MEXTERNAL} STATIC
+	${CMAKE_CURRENT_LIST_DIR}/external/Macros.h
+	${CMAKE_CURRENT_LIST_DIR}/external/Macros.cpp
+)
+if(WIN32)
+	set_external_windows(${MEXTERNAL} ${CMAKE_CURRENT_LIST_DIR}/external)
+elseif(APPLE)
+	set_external_mac(${MEXTERNAL})
 endif()
 
 # course 1
-include(${CMAKE_CURRENT_LIST_DIR}/courses/001/CMakeLists.txt)
+include(${CMAKE_CURRENT_LIST_DIR}/courses/001_init_render_pipeline/CMakeLists.txt)
 
 # course 2
 include(${CMAKE_CURRENT_LIST_DIR}/courses/002/CMakeLists.txt)
