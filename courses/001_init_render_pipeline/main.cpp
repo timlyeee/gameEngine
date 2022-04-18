@@ -10,11 +10,7 @@
  * @copyright Copyright (c) 2021
  */
 
-#include "renderer/Texture.h"
-#include "view/View.h"
-#include <iostream>
-#include "shaders/Shader.h"
-
+#include "core/Application.h"
 
 
 //Vertices for painting 2 triangles which is a rectangle
