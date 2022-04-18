@@ -13,10 +13,10 @@ set(FILESYSTEM_SOURCES
 # source_group(fileSystem FILES ${FILESYSTEM_SOURCES})
 
 set(VIEW_SOURCES
-	${CMAKE_CURRENT_LIST_DIR}/core/view/GLView.h
-	${CMAKE_CURRENT_LIST_DIR}/core/view/GLView.cpp
-	${CMAKE_CURRENT_LIST_DIR}/core/view/GLFWCallback.h
-	${CMAKE_CURRENT_LIST_DIR}/core/view/GLFWCallback.cpp
+	${CMAKE_CURRENT_LIST_DIR}/core/renderWindow/GLRenderWindow.h
+	${CMAKE_CURRENT_LIST_DIR}/core/renderWindow/GLRenderWindow.cpp
+	${CMAKE_CURRENT_LIST_DIR}/core/renderWindow/GLFWCallback.h
+	${CMAKE_CURRENT_LIST_DIR}/core/renderWindow/GLFWCallback.cpp
 )
 # source_group(view FILES ${VIEW_SOURCES})
 
@@ -28,6 +28,8 @@ set(RENDERPIPELINE_SOURCES
 
 	${CMAKE_CURRENT_LIST_DIR}/renderpipeline/shaders/Shader.h
 	${CMAKE_CURRENT_LIST_DIR}/renderpipeline/shaders/Shader.cpp
+	${CMAKE_CURRENT_LIST_DIR}/renderpipeline/scene/Scene.h
+	${CMAKE_CURRENT_LIST_DIR}/renderpipeline/scene/Scene.cpp
 )
 # source_group(renderpipeline FILES ${RENDERPIPELINE_SOURCES})
 

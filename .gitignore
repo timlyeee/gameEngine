@@ -5,6 +5,8 @@
 
 # vs project
 out/
+# vscode projec
+build/
 
 # User-specific files
 *.rsuser
