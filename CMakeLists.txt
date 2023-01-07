@@ -18,7 +18,7 @@ add_library(${MEXTERNAL} STATIC
 if(WIN32)
 	set_external_windows(${MEXTERNAL} ${CMAKE_CURRENT_LIST_DIR}/external)
 elseif(APPLE)
-	set_external_mac(${MEXTERNAL})
+	set_external_mac(${MEXTERNAL} ${CMAKE_CURRENT_LIST_DIR}/external)
 endif()
 
 # course 1

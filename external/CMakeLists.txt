@@ -53,7 +53,7 @@ macro(set_external_windows mexternal CWD)
 	
 endmacro()
 
-macro(set_external_mac mexternal)
+macro(set_external_mac mexternal CWD)
 	add_library(glew STATIC IMPORTED GLOBAL)
 	set_target_properties(glew PROPERTIES
 		INTERFACE_INCLUDE_DIRECTORIES ${CWD}/include/Mac/glew

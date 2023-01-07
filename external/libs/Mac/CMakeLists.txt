@@ -2,7 +2,7 @@ find_package(GLEW 2.2 REQUIRED)
 #set(GLFW_DIR "/opt/homebrew/Cellar/glfw/3.3.6/")
 find_package(GLFW3)
 
-set(CMAKE_CXX_FLAGS "-g -std=c++11 -Wformat")
+set(CMAKE_CXX_FLAGS "-g -std=c++17 -Wformat")
 
 # Path to glew lib
 link_directories(/opt/homebrew/Cellar/glew/2.2.0_1/lib)
